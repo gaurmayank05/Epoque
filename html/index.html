@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
+    <!--==================== UNICONS ====================-->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dropdown.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/footer.css">
+
+
+    <title>EPOQUE@Prastuti-23</title>
+</head>
+
+<body>
+    <!--========== SCROLL TOP ==========-->
+    <a href="#" class="scrolltop" id="scroll-top">
+        <i class='bx bx-chevron-up scrolltop__icon'></i>
+    </a>
+
+
+    <!--========== HEADER ==========-->
+    <header class="l-header" id="header">
+        <nav class="nav bd-container">
+            <a href="../html/index.html" class="nav__logo"><img src="../images/logo.png" alt="Prastuti Logo" style="height: 5rem;"></a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="../html/index.html" class="nav__link active-link">Home</a></li>
+                    <li class="nav__item"><a href="../html/about.html" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="../html/gallery.html" class="nav__link">Gallery</a></li>
+                    <div class="dropdown">
+                        <li class="nav__item"><a class="nav__link">Events</a>
+                            <div class="dropdown-content">
+                                <a href="../html/departments.html">Department Level</a>
+                                <a href="../html/institute.html">Institute Level</a>
+                                <a href="../html/inter-institute.html">Inter-Institute Level</a>
+                            </div>
+                    </div>
+                    </li>
+                    <div class="dropdown">
+                        <li class="nav__item"><a class="nav__link">Apex Committe</a>
+                            <div class="dropdown-content">
+                                <a href="../html/commite.html">Organizing Committe</a>
+                                <a href="../html/studentlist.html">Students Coordinators</a>
+                            </div>
+                    </div>
+                    </li>
+                    <li class="nav__item"><a href="../html/contact.html" class="nav__link">Contact us</a></li>
+
+                    <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+
+    <main class="main">
+
+        <!--========== HOME ==========-->
+
+        <Section style="top: 70px;">
+            <img class="img-logo" src="../images/about.png" id="logo">
+            <h2 id="text">
+                <!-- <span>It's time for a new</span><br> -->
+                EPOQUE@PRASTUTI-23
+            </h2>
+
+            <img src="https://user-images.githubusercontent.com/65358991/170092504-132fa547-5ced-40e5-ab64-ded61518fac2.png"
+                id="bird1">
+            <img src="https://user-images.githubusercontent.com/65358991/170092542-9747edcc-fb51-4e21-aaf5-a61119393618.png"
+                id="bird2">
+            <img src="https://user-images.githubusercontent.com/65358991/170092559-883fe071-eb4f-4610-8c8b-a037d061c617.png"
+                id="forest">
+
+            <a href="#" id="btn">Registration</a>
+
+            <img src="https://user-images.githubusercontent.com/65358991/170092605-eada6510-d556-45cc-b7fa-9e4d1d258d26.png"
+                id="rocks">
+            <img src="https://user-images.githubusercontent.com/65358991/170092616-5a70c4af-2eed-496f-bde9-b5fcc7142a31.png"
+                id="water">
+        </Section>
+        /
+        <div class="sec">
+            <div>
+                <h2>The three-year wait is finally over now</h2><br><br>
+
+
+                <p>KIET Group of Institutions is officially open now for welcoming the show wizards of the student
+                    fraternity across the nation to prove their mettle.</p><br>
+    
+    
+                <p> best than putting forth a great show and winning attractive prizes for that?<br>
+    
+    
+                    If this tickles your mind and makes you go gala, come, register, and perform and the glory is yours.</p>
+                <br>
+    
+    
+                <p>This zingy traditional cultural fest is, ‘of the students, by the students, and for the students which
+                    will span over three days i.e., from 2nd-4th March 2023 apart from encouraging the students to
+                    participate in various events proactively. It also provides a chance to earn impressive prizes worth Rs.
+                    3 Lac.</p><br>
+            </div>
+            <div class="container-fluid" style=" text-align: center;">
+              <img src="../images/poster.jpg"/>
+            </div>
+        </div>
+
+
+
+        <script>
+            let text = document.getElementById('text');
+            let bird1 = document.getElementById('bird1');
+            let bird2 = document.getElementById('bird2');
+            let btn = document.getElementById('btn');
+            let rocks = document.getElementById('rocks');
+            let forest = document.getElementById('forest');
+            let water = document.getElementById('water');
+            let header = document.getElementById('header');
+
+            window.addEventListener('scroll', function () {
+                let value = window.scrollY;
+
+                text.style.top = 50 + value * -.1 + '%';
+                bird2.style.top = value * -1.5 + 'px';
+                bird2.style.left = value * 2 + 'px';
+                bird1.style.top = value * -1.5 + 'px';
+                bird1.style.left = value * -5 + 'px';
+                btn.style.marginTop = value * 1.5 + 'px';
+                rocks.style.top = value * -.12 + 'px';
+                forest.style.top = value * .25 + 'px';
+                header.style.top = value * .5 + 'px';
+            })
+        </script>
+
+        <!--========== FOOTER ==========-->
+        <footer class="footer">
+            <div class="waves">
+              <div class="wave" id="wave1"></div>
+              <div class="wave" id="wave2"></div>
+              <div class="wave" id="wave3"></div>
+              <div class="wave" id="wave4"></div>
+            </div>
+            <div> <ul class="social-icon">
+                <li class="social-icon__item"><a class="social-icon__link" href="https://www.facebook.com/kiet.edu/?ref=br_rs">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                  </a></li>
+                <li class="social-icon__item"><a class="social-icon__link" href="https://twitter.com/Kiet_edu"">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                  </a></li>
+                <li class="social-icon__item"><a class="social-icon__link" href="https://www.linkedin.com/school/kiet-group-of-institutions/">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                  </a></li>
+                <li class="social-icon__item"><a class="social-icon__link" href="https://www.instagram.com/kiet_edu/?utm_medium=copy_link">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                  </a></li>
+              </ul>
+              <ul class="menu">
+                <li class="menu__item"><a class="menu__link" href="index.html">Home</a></li>
+                <li class="menu__item"><a class="menu__link" href="about.html">About</a></li>
+                <li class="menu__item"><a class="menu__link" href="gallery.html">Gallery</a></li>
+                <!----=====<li class="menu__item"><a class="menu__link" href="#">Events</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Apex Committe</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>=====----->
+          
+              </ul></div>
+              <div>
+                <img  class="scan" src="../images/scan.jpg"/>
+            </div>
+           
+            <p>&copy;<span id="year"></span> KIET | All Rights Reserved</p>
+          </footer>
+
+        <!--==================== MAIN JS ====================-->
+        <script type="text/javascript" src="../js/main.js"></script>
+        <script src="../js/script.js"></script>
+        <script src="../js/footer.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
