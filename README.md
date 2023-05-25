@@ -1,1 +1,1 @@
-https://dewanshukaushik.github.io/epoque-2.0/html/
+https://gaurmayank05.github.io/Epoque/html/index
